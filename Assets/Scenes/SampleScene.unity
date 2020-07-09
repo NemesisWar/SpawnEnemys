@@ -611,7 +611,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _maxHealth: 100
-  _slider: {fileID: 1809790494}
+  _changeHealth:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1809790494}
+        m_MethodName: ChangeBarAdapter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &289218191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3266486874587672053, guid: 9570ea5ad84c4a14b938a5e1a8c5e978,
@@ -1601,7 +1614,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.607e-41, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1617,7 +1630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &744558383
 GameObject:
@@ -2051,7 +2064,7 @@ RectTransform:
   - {fileID: 750912824}
   - {fileID: 869151248}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2997,7 +3010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1517950018
 PrefabInstance:
@@ -3383,7 +3396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852d4b8d955a4294fb2643f6a5ea7124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 0}
   _pathTime: 1
   _pathRunningTime: 0
 --- !u!1 &1845253965
@@ -3882,7 +3894,7 @@ PrefabInstance:
     - target: {fileID: 1441565240309501952, guid: e477160e24ca4994fb52aebbf85c17b2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1441565240309501952, guid: e477160e24ca4994fb52aebbf85c17b2,
         type: 3}
@@ -4040,7 +4052,7 @@ PrefabInstance:
     - target: {fileID: 6545084147050324587, guid: 8002920db608d06479a9da6f54a00f28,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6545084147050324587, guid: 8002920db608d06479a9da6f54a00f28,
         type: 3}

@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _health;
     [SerializeField] private float _maxHealth;
-    [SerializeField] private SliderComponent _slider;
+    [SerializeField] private UnityEvent _changeHealth;
     [HideInInspector] public float Health => _health;
 
-    private void Start()
+    public event UnityAction ChangeHealth
     {
-        _slider.StartValue(Health);
+        add => _changeHealth.AddListener(value);
+        remove => _changeHealth.RemoveListener(value);
     }
 
     private void OnValidate()
@@ -32,7 +34,7 @@ public class Player : MonoBehaviour
         {
             _health -= Damage;
         }
-        _slider.ChangeValue(Health);
+        _changeHealth.Invoke();
     }
 
     public void AddHelth(float AddHealth)
@@ -45,6 +47,6 @@ public class Player : MonoBehaviour
         {
             _health += AddHealth;
         }
-        _slider.ChangeValue(Health);
+        _changeHealth.Invoke();
     }
 }

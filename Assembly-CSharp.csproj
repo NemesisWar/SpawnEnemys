@@ -83,9 +83,9 @@
     <Compile Include="Assets\Scripts\UI\DelevopersButton.cs" />
     <Compile Include="Assets\Scripts\UI\FreezRotationCamera.cs" />
     <Compile Include="Assets\Scripts\UI\GamePanel.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthBarChanger.cs" />
     <Compile Include="Assets\Scripts\UI\InventoryPanel.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuPanel.cs" />
-    <Compile Include="Assets\Scripts\UI\SliderComponent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
